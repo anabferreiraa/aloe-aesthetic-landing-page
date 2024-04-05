@@ -1,0 +1,3 @@
+const navegar = {
+	bg: String
+};

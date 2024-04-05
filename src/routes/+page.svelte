@@ -1,5 +1,7 @@
 <script>
-	import Nav from '../lib/componentes/nav.svelte';
+	import Nav from '../lib/session/navigation/nav.svelte';
 </script>
 
-<Nav></Nav>
+<header class=" h-[400px] bg-lime-800">
+	<Nav></Nav>
+</header>
