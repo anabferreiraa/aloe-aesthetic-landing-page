@@ -3,3 +3,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
+	a {
+		@apply text-lg text-black hover:text-slate-50;
+	}
+}
+
+@layer components {
+	.nav-bar {
+		@apply mx-auto mt-10 flex items-center px-4 py-8  md:px-10 md:py-10;
+	}
+
+	.style-nav {
+		@apply rounded-xl bg-white/10 drop-shadow-md backdrop-blur-sm;
+	}
+
+	.section-spacing-padding-x {
+		@apply px-4 md:px-8 lg:px-12 xl:px-0;
+	}
+
+	.section-spacing-padding-l {
+		@apply pl-4 md:pl-8 lg:pl-12 xl:pl-0;
+	}
+	.section-spacing-padding-y {
+		@apply py-16 md:py-20 lg:py-32;
+	}
+	.section-spacing-padding-t {
+		@apply pt-16 md:pt-20 lg:pt-32;
+	}
+	.section-spacing-padding-b {
+		@apply pb-16 md:pb-20 lg:pb-32;
+	}
+}
+
+@layer utilities {
+	.filter-none {
+		filter: none;
+	}
+	.filter-grayscale {
+		filter: grayscale(100%);
+	}
+}

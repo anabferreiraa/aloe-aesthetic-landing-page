@@ -1,7 +1,9 @@
 <script>
-	import Nav from '../lib/componentes/nav.svelte';
+	import Nav from '../lib/session/navigation/nav.svelte';
 </script>
 
-<Nav></Nav>
-<h1>hiii</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<header
+	class="relative flex h-[400px] w-full flex-col justify-between bg-lime-800 py-5 md:h-[400px] md:py-8"
+>
+	<Nav></Nav>
+</header>
