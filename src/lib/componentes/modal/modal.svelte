@@ -11,7 +11,7 @@
 
 {#if shown}
 	<div
-		class="absolute bottom-0 z-40 flex h-full w-full items-end justify-center backdrop-brightness-75"
+		class=" absolute z-40 flex h-full w-full items-end items-center justify-center backdrop-brightness-75"
 	>
 		<div
 			class="flex h-auto w-[90%] flex-col items-center space-y-5 rounded-lg bg-white p-8 drop-shadow-md"
@@ -22,9 +22,9 @@
 				</button>
 			</div>
 			<div class="flex flex-col items-center space-y-1">
-				<a href="/">Produtos</a>
-				<a href="/">Contato</a>
-				<a href="/">Informações</a>
+				<a class="text-black" href="/">Produtos</a>
+				<a class="text-black" href="/">Contato</a>
+				<a class="text-black" href="/">Informações</a>
 			</div>
 
 			<slot />

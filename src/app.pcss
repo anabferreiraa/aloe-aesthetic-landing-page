@@ -6,13 +6,19 @@
 
 @layer base {
 	h1 {
-		@apply text-2xl;
+		@apply text-4xl  lg:text-5xl xl:text-7xl;
 	}
 	h2 {
 		@apply text-xl;
 	}
 	a {
-		@apply text-lg text-black hover:text-slate-50;
+		@apply text-lg text-white hover:text-white/50;
+	}
+	p {
+		@apply text-lg  lg:text-xl;
+	}
+	span {
+		@apply text-base  lg:text-lg;
 	}
 }
 
@@ -49,5 +55,8 @@
 	}
 	.filter-grayscale {
 		filter: grayscale(100%);
+	}
+	.bg-main {
+		background-color: #065f46;
 	}
 }
