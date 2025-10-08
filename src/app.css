@@ -1,1 +1,80 @@
 @import 'tailwindcss';
+@import '@fontsource/roboto/100.css';
+@import '@fontsource/roboto/200.css';
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+
+@theme {
+	--breakpoint-sm: 40rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 80rem;
+	--breakpoint-2xl: initial;
+
+	--color-green-pea-50: #ecfdf8;
+	--color-green-pea-100: #d1faee;
+	--color-green-pea-200: #a7f3de;
+	--color-green-pea-300: #6ee7c5;
+	--color-green-pea-400: #34d3a6;
+	--color-green-pea-500: #10b98a;
+	--color-green-pea-600: #05966d;
+	--color-green-pea-700: #047857;
+	--color-green-pea-800: #065f46;
+	--color-green-pea-900: #064e3a;
+	--color-green-pea-950: #022c20;
+}
+@layer {
+	body {
+  font-family: 'Roboto', sans-serif;
+}
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+@utility container {
+	padding-inline: 1.5rem;
+	margin-inline: auto;
+
+	@variant sm {
+		padding-inline: 3rem;
+	}
+
+	@variant md {
+		padding-inline: 2rem;
+	}
+
+	@variant lg {
+		padding-inline: 1.5rem;
+	}
+	@variant xl {
+		padding-inline: 0;
+	}
+}
+@utility titleSection {
+	font-size: 1.875rem;
+	font-weight: 700;
+	@variant lg {
+		font-size: 2.25rem;
+	}
+}
+
+@utility titleCard {
+	font-size: 1.5rem;
+	@variant lg {
+		font-size: 1.875rem;
+	}
+}
+
+@utility card {
+	border-radius: var(--radius-3xl);
+}
+
+@utility effectglass {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
