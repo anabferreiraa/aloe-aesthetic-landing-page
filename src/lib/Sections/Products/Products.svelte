@@ -1,4 +1,6 @@
 <script>
+	import BoxIcons from "$lib/Components/BoxIcons/BoxIcons.svelte";
+
 	
 
  const products = [
@@ -65,6 +67,9 @@
                  </div>
             </div>    
             {/each}
+        </div>
+        <div>
+            <BoxIcons/>
         </div>
     </div>
 </section>
