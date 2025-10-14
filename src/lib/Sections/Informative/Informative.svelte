@@ -6,9 +6,8 @@
     }
 </script>
 
-
-<section >
-    <div class="container grid grid-cols-1 lg:grid-cols-2 p-6 gap-15 justify-center items-center py-20 bg-green-pea-800">
+<section class="py-20">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 p-6 gap-15 justify-center items-center  bg-green-pea-800">
       <div class="lg:h-[315px] rounded-3xl overflow-clip">
         <img src="/image/informative/section-informative-creme-aloe-vera.webp" alt="">
       </div>
