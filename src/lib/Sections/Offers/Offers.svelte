@@ -74,10 +74,16 @@
      function formatPrice(price) {
 		return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 	}
+
+	let noticeVisible = false;
+
+	function toggleNotice() {
+		noticeVisible = !noticeVisible;
+	}
 </script>
 
 <section id="ofertas" class="mt-20">
-	<div class="container flex flex-col py-20 justify-center items-center bg-[url(/image/offers/background-offers-mobile.webp)] lg:bg-[url(/image/offers/background-offers-desktop.webp)] bg-cover bg-center bg-no-repeat">
+	<div class="relative container flex flex-col py-20 justify-center items-center bg-[url(/image/offers/background-offers-mobile.webp)] lg:bg-[url(/image/offers/background-offers-desktop.webp)] bg-cover bg-center bg-no-repeat">
 		<div
 			class="grid grid-cols-1 gap-8 xl:px-10 py-10 lg:grid-cols-3"
 		>
@@ -101,18 +107,27 @@
 							currency: 'BRL'
                     })} <span class="text-xl">à vista</span></p>
 						</div>
-						<button class="bg-green-pea-400 p-8 cursor-pointer"><ShoppingCart class="h-8 w-8" /></button>
+						<a href="#aviso" onclick={toggleNotice} class="bg-green-pea-400 p-8 cursor-pointer flex items-center justify-center" ><ShoppingCart class="h-8 w-8" /> </a>
 					</div>
 				</div>
 			{/each}
               
 		</div>
+		{#if noticeVisible }
+			<div id="aviso" class="absolute bg-green-pea-50 flex flex-col justify-between items-center p-8 shadow-xl/30 gap-4">
+              <h3 class="text-2xl text-green-pea-950">Sabia que essa página é demonstrativa? </h3>
+			  <p class="text-green-pea-950/80">Fico muito Feliz que queira comprar, mas os produtos não existem </p>
+			  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Winking%20Face.png" alt="Winking Face" width="25" height="25" />
+		     </div>
+		{/if}
+		
+
         <div class="flex flex-col justify-center items-center gap-6 mt-10 text-center">
               <p class="text-2xl text-green-pea-50">Adquira o kit completo de Aloecram</p>
-              <button class=" bg-green-pea-50 rounded-full cursor-pointer"><CaretCircleDown class="h-10 w-10 text-green-pea-800"/></button>
+              <button class=" bg-green-pea-50 rounded-full cursor-pointer"> <a href="#kit"><CaretCircleDown class="h-10 w-10 text-green-pea-800"/></a></button>
         </div> 
 	</div>
-    <div class="container bg-green-pea-900 py-20">
+    <div id="kit" class="container bg-green-pea-900 py-20">
       <div class="xl:px-10 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="flex justify-end items-end">
         <img src={completeKit.image.dir + completeKit.image.name }.webp alt="">
@@ -132,7 +147,7 @@
 							style: 'currency',
 							currency: 'BRL'
                     })} Sem juros</span>
-        <button class="bg-green-pea-400 hover:bg-green-pea-300 p-6 cursor-pointer text-green-pea-950 font-medium text-2xl">Comprar kit Completo</button>
+					<a href="#aviso" onclick={toggleNotice} class="bg-green-pea-400 hover:bg-green-pea-300 p-6 cursor-pointer text-green-pea-950 font-medium text-2xl text-center">Comprar kit Completo</a>
       </div>
       
     </div>
