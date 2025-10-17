@@ -36,7 +36,7 @@
 
 </script>
 
-<section class="grid grid-cols-1 md:grid-cols-3 items-center py-20 gap-10">
+<section class="grid grid-cols-1 md:grid-cols-3 items-center mt-20 gap-10">
   <!-- Coluna esquerda -->
   <div class="flex flex-col items-center justify-center gap-20">
     {#each productBenefits.slice(0, 2) as { icon, title }}

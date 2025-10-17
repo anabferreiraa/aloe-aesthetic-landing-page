@@ -1,5 +1,5 @@
 <script>
-	import Menu from "$lib/Icons/Menu.svelte";
+	import Menu from "$lib/Components/Icons/Menu.svelte";
 	import { fade } from 'svelte/transition';
 
 	let links = [
