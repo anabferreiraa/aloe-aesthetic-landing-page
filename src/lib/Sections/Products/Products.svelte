@@ -47,7 +47,6 @@
     }
  ]
 </script>
-
 <section class="py-20">
     <div class="container">
         <div class="flex items-center gap-4">
