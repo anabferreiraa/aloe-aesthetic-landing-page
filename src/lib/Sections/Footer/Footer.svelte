@@ -53,7 +53,7 @@
 	};
 </script>
 
-<footer>
+<footer id="contato">
 	<div class="container bg-green-pea-800  p-10">
 		<div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-8"> 
         <div class="flex flex-col gap-3">

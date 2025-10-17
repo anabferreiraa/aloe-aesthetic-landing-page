@@ -3,9 +3,9 @@
 	import { fade } from 'svelte/transition';
 
 	let links = [
-		{ name: 'Produtos', href: '#home' },
-		{ name: 'Informações', href: '#home' },
-		{ name: 'Contato', href: '#home' }
+		{ name: 'Produtos', href: '#produtos' },
+		{ name: 'Informações', href: '#sobre' },
+		{ name: 'Contato', href: '#contato' }
 
 
 	];
