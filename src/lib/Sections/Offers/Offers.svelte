@@ -11,7 +11,7 @@
 			},
 			text: {
 				title: 'Hidratante Corporal',
-				descriton: 'Surpreenda-se com a fragância autêntica e que deixa sua pele macia e perfumada.'
+				descriton: 'Surpreenda-se com a fragrância autêntica e a textura que deixa sua pele macia, nutrida e delicadamente perfumada.'
 			},
             price: {
 			real_value: 170.00,
@@ -27,7 +27,7 @@
 			},
 			text: {
 				title: 'Creme Facial',
-				descriton: 'Tratamento ideal para preenchimento e revitalização facial.'
+				descriton: 'O tratamento ideal para preencher, revitalizar e devolver o brilho natural da sua pele.'
 			},
              price: {
 			real_value: 170.00,
@@ -43,7 +43,7 @@
 			},
 			text: {
 				title: 'Esfoliante Facial',
-				descriton: 'Reduz a oleosidade, deixa a pele macia e uniforme desde a primeira aplocação.'
+				descriton: 'Reduz a oleosidade, remove impurezas e deixa a pele macia, uniforme e renovada desde a primeira aplicação.'
 			},
              price: {
 			real_value: 170.00,
@@ -76,7 +76,7 @@
 	}
 </script>
 
-<section class="mt-20">
+<section id="ofertas" class="mt-20">
 	<div class="container flex flex-col py-20 justify-center items-center bg-[url(/image/offers/background-offers-mobile.webp)] lg:bg-[url(/image/offers/background-offers-desktop.webp)] bg-cover bg-center bg-no-repeat">
 		<div
 			class="grid grid-cols-1 gap-8 xl:px-10 py-10 lg:grid-cols-3"
