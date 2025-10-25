@@ -159,7 +159,7 @@
 
 		<dialog
 			id="dialogOfertas"
-			class="mx-auto mt-20 overflow-y-hidden rounded-lg bg-green-pea-50 shadow-xl/30 shadow-lg"
+			class="mx-auto mt-20 overflow-y-hidden rounded-lg bg-green-pea-50 shadow-xl/30 shadow-lg backdrop:bg-green-pea-950/60"
 		>
 			{#if $selectedContent}
 				<div

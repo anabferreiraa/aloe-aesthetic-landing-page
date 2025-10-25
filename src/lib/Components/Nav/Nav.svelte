@@ -43,7 +43,7 @@
 {#if menuVisible}
   <div
     transition:fade
-    class="effectglass absolute left-1/2 transform -translate-x-1/2 mt-2 w-[90%] max-w-md md:max-w-xl p-8 lg:hidden text-center z-50"
+    class="effectglass absolute left-1/2 transform -translate-x-1/2 mt-2 w-[90%] max-w-md md:max-w-xl p-8 lg:hidden text-center z-50 backdrop:bg-green-pea-950/60"
   >
     <ul class="space-y-6 text-green-50">
       {#each links as { name, href }}
