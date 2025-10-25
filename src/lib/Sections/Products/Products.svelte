@@ -54,16 +54,16 @@
 <section id="produtos" class="py-20">
     <div class="container">
         <div class="flex items-center gap-4">
-             <div class="w-4 h-4 bg-green-800"></div> <h3 class="titleCard text-green-800 ">tudo pensado para o seu bem estar!</h3>
+             <div class="w-4 h-4 bg-green-800"></div> <h3 class="titleCard text-green-800 ">Tudo pensado para o seu bem estar!</h3>
         </div>
         <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
             {#each products as {image, descriton, text, dir, alt, title}}
-            <div class="grid grid-cols-1 justify-between border-2 border-green-pea-950 gap-4">
-                <div >
+            <div class="grid grid-cols-1 justify-between border-1 border-green-pea-950 gap-4">
+                <div>
                  <img  src={image.dir + image.name}.webp alt={alt}>
                 </div>
                  <div class="p-5 space-y-4">
-                   <h4 class="text-2xl text-green-pea-950">{text.title}</h4>
+                   <h4 class="text-2xl text-green-pea-800 font-bold">{text.title}</h4>
                    {#each text.descriton as itens }
                      <p class="text-xl text-green-pea-800">{itens}</p>
                    {/each}

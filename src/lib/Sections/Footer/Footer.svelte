@@ -166,7 +166,7 @@
 	const selectedContent = writable('');
 	let selectedTermos = termos;
 
-	function openDialog(content) {
+	function openDialogFooter(content) {
 		const dialog = document.getElementById('dialog');
 		if (dialog instanceof HTMLDialogElement) {
 			selectedContent.set(content);
@@ -174,7 +174,7 @@
 		}
 	}
 
-	function closeDialog() {
+	function closeDialogFooter() {
 		const dialog = document.getElementById('dialog');
 		if (dialog instanceof HTMLDialogElement) {
 			dialog.close();
@@ -184,8 +184,8 @@
 
 </script>
 
-<footer id="contato" class="relative">
-	<div class=" container bg-green-pea-800  p-10">
+<footer id="contato" class="relative bg-green-pea-800">
+	<div class=" container p-10">
 		<div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-8"> 
         <div class="flex flex-col gap-3">
 			<h4 class="text-xl text-green-pea-50">{footer.text.title}</h4>
@@ -193,13 +193,13 @@
 		</div>
 		
 			{#each footer.infor as { title, links}}
-				<ul>
+				<ul class="flex lg:items-center lg:justify-center">
 				<li class="grid grid-cols-1 gap-5 justify-items-start">
 					<h5 class="text-xl text-green-pea-50">{title}</h5>
 					{#each links as { title, href, id }}
 						<a onclick={(event) => {
 						event.preventDefault();
-						openDialog(id);
+						openDialogFooter(id);
 					}} class="text-green-pea-50/80" {href}>{title}</a>
 					{/each}
 				</li>
@@ -207,7 +207,7 @@
 		{/each}
 		 
 		<!-- Componente do diálogo -->
-		<dialog id="dialog" class="overflow-y-hidden mx-auto mt-20 rounded-lg shadow-lg md:max-w-xl bg-green-pea-50">
+		<dialog id="dialog" class="overflow-y-hidden mx-auto mt-20 rounded-lg shadow-lg md:max-w-xl bg-green-pea-50  backdrop:bg-green-pea-950/60">
 			{#if $selectedContent}
 				{#each termos as term}
 					{#if term.id === $selectedContent}
@@ -227,10 +227,10 @@
 					{/if}
 				{/each}
 			{/if}
-			<div class="flex justify-end border p-6 border-green-pea-900">
+			<div class="flex justify-end border-t p-6 border-green-pea-900">
 				<button
 					class="rounded-xl bg-green-pea-400 hover:bg-green-pea-300 px-5 py-4 cursor-pointer text-green-pea-950 font-medium text-2xl"
-					onclick={closeDialog}>ok</button>
+					onclick={closeDialogFooter}>ok</button>
 			</div>
 		</dialog>
 
