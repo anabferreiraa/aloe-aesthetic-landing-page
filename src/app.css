@@ -71,7 +71,7 @@
 	border-radius: var(--radius-3xl);
 }
 
-@utility effectglass {
+@utility effectglassNav {
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.43);
 border-radius: 16px;
