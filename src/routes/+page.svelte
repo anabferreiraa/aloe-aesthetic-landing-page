@@ -9,8 +9,10 @@
 </script>
 
 <Header/>
-
+<main>
 <Products/>
 <Informative/>
 <Offers/>
+</main>
+
 <Footer/>

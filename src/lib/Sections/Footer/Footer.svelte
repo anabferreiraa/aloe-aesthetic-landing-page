@@ -1,5 +1,4 @@
 <script>
-	import Facebook from "$lib/Components/Icons/Facebook.svelte";
 	import Instagram from "$lib/Components/Icons/Instagram.svelte";
 	import Whatsapp from "$lib/Components/Icons/Whatsapp.svelte";
 	import { writable } from 'svelte/store';
@@ -185,7 +184,7 @@
 </script>
 
 <footer id="contato" class="relative bg-green-pea-800">
-	<div class=" container pt-10">
+	<div class=" container py-10">
 		<div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-8"> 
         <div class="flex flex-col gap-3">
 			<h4 class="text-xl text-green-pea-50">{footer.text.title}</h4>
@@ -242,7 +241,6 @@
           <div class="flex  gap-3 lg:justify-end  ">
             <a href="https://wa.me/559184959195" target="_blank"> <Whatsapp class="w-8 h-8 text-green-pea-50"/> </a>
               <a href="https://www.instagram.com/ana_ferreirabeatriz"  target="_blank"> <Instagram class="w-8 h-8 text-green-pea-50"/> </a>
-              <a href="https://www.instagram.com/ana_ferreirabeatriz" target="_blank"> <Facebook class="w-8 h-8 text-green-pea-50"/> </a>
           </div>
        </div>
           
