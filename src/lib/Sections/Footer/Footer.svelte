@@ -185,7 +185,7 @@
 </script>
 
 <footer id="contato" class="relative bg-green-pea-800">
-	<div class=" container p-10">
+	<div class=" container pt-10">
 		<div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-8"> 
         <div class="flex flex-col gap-3">
 			<h4 class="text-xl text-green-pea-50">{footer.text.title}</h4>
@@ -193,7 +193,7 @@
 		</div>
 		
 			{#each footer.infor as { title, links}}
-				<ul class="flex lg:items-center lg:justify-center">
+				<ul class="flex  lg:justify-center">
 				<li class="grid grid-cols-1 gap-5 justify-items-start">
 					<h5 class="text-xl text-green-pea-50">{title}</h5>
 					{#each links as { title, href, id }}
