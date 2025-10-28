@@ -63,9 +63,9 @@
 			alt: ''
 		},
 		text: {
-			title: 'Tudo para o seu bem estar e conforto',
+			title: 'Tudo para o seu bem-estar e conforto',
 			descriton:
-				'Adquirindo a linha completa de Aloe asthetics garante uma linda nécessarie, inspirada no conforto e necessidade para o seu dia a dia'
+				'Adquirindo a linha completa de Aloe asthetics garante uma linda nécessarie, inspirada no conforto e necessidade para o seu dia-a-dia'
 		},
 		price: {
 			real_value: 442.0,

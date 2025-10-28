@@ -54,7 +54,7 @@
 <section id="produtos" class="py-20">
     <div class="container">
         <div class="flex items-center gap-4">
-             <div class="w-4 h-4 bg-green-pea-950"></div> <h3 class="titleCard text-green-pea-950 ">Tudo pensado para o seu bem estar!</h3>
+             <div class="w-4 h-4 bg-green-pea-950"></div> <h3 class="titleCard text-green-pea-950 ">Tudo pensado para o seu bem-estar!</h3>
         </div>
         <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
             {#each products as {image, descriton, text, dir, alt, title}}
