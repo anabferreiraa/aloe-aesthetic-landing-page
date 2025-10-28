@@ -22,5 +22,5 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="16"
-	/><circle cx="180" cy="76" r="12" /></svg
+	/><circle  fill="currentColor" cx="180" cy="76" r="12" /></svg
 >

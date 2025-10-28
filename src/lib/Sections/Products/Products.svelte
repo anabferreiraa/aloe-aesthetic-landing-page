@@ -52,7 +52,7 @@
  ]
 </script>
 <section id="produtos" class="py-20">
-    <div class="container">
+    <div class="container bg-amber-300">
         <div class="flex items-center gap-4">
              <div class="w-4 h-4 bg-green-800"></div> <h3 class="titleCard text-green-800 ">Tudo pensado para o seu bem estar!</h3>
         </div>

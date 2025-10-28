@@ -10,14 +10,22 @@
       href:"#produtos"
   }
 </script>
-<header id="header" class="bg-[url(/image/header/Background-header-mobile.webp)] lg:bg-[url(/image/header/background-header-desktop.webp)] bg-center bg-no-repeat bg-cover">
-<div class="container h-[980px] md:h-[1050px] lg:h-[800px] p-6">
-  <Nav/>
-   <div class="mt-20 lg:mt-30 text-center lg:text-start lg:space-y-8 space-y-7">
-    <span class="text-green-pea-800/70">{text.subTitle}</span>
-    <h1 class="text-4xl  mb-3 lg:text-7xl text-green-pea-900">{text.title}</h1>
-    <p class="md:text-2xl lg:max-w-lg text-green-pea-950/80">{text.descrition}</p>
-    <a href={cta.href} class="bg-green-pea-400 hover:bg-green-pea-300 mt-6 px-5 py-4 cursor-pointer text-green-pea-950 font-medium text-2xl" >{cta.title}</a>
+<header id="header" class="bg-[url(/image/header/Background-header-mobile.webp)] lg:bg-[url(/image/header/background-header-desktop.webp)] bg-center bg-no-repeat bg-cover pt-3 h-[980px] md:h-[1050px] lg:h-[790px]">
+<Nav />
+<div class="container grid grid-cols-1 lg:grid-cols-2  items-center h-[85%]">
+<div class="flex flex-col gap-5 text-center lg:text-start text-green-pea-950">
+    <h2 class="">{text.subTitle}</h2>
+    <h1 class="text-4xl lg:text-7xl">{text.title}</h1>
+    <p class="md:text-2xl opacity-70">{text.descrition}</p>
+    
+    <div>
+      <button class="bg-green-pea-600 hover:bg-green-pea-400 px-6 py-4 text-green-pea-50 text-2xl"><a href={cta.href}  >{cta.title} </a></button>
+    </div>
+      
+       
    </div>
+   
 </div>
+  
 </header>
+  
