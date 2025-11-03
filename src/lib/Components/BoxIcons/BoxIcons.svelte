@@ -41,13 +41,17 @@
   <div class="flex flex-col items-center justify-center gap-20">
     {#each productBenefits.slice(0, 2) as { icon, title }}
       <div class="flex flex-col items-center text-center gap-2">
-        <div class="w-20 h-20">
-          <img
-            class="w-full h-full"
-            src={icon.dir + icon.name + ".svg"}
-            alt={icon.alt}
-          />
-        </div>
+        <div class="relative w-20 h-20">
+  <!-- Borda girando -->
+  <div class="absolute inset-0 border-5 border-dashed border-green-900 rounded-full animate-spin-slow"></div>
+
+  <!-- Imagem fixa -->
+  <img
+    class="w-full h-full rounded-full relative"
+    src={icon.dir + icon.name + ".svg"}
+    alt={icon.alt}
+  />
+</div>
         <p class="text-green-pea-800 text-lg">{title}</p>
       </div>
     {/each}
@@ -66,13 +70,17 @@
   <div class="flex flex-col items-center justify-center gap-20">
     {#each productBenefits.slice(2, 4) as { icon, title }}
       <div class="flex flex-col items-center text-center gap-2">
-        <div class="w-20 h-20">
-          <img
-            class="w-full h-full"
-            src={icon.dir + icon.name + ".svg"}
-            alt={icon.alt}
-          />
-        </div>
+        <div class="relative w-20 h-20">
+  <!-- Borda girando -->
+  <div class="absolute inset-0 border-5 border-dashed border-green-900 rounded-full animate-spin-slow"></div>
+
+  <!-- Imagem fixa -->
+  <img
+    class="w-full h-full rounded-full relative"
+    src={icon.dir + icon.name + ".svg"}
+    alt={icon.alt}
+  />
+</div>
         <p class="text-green-pea-800 text-lg">{title}</p>
       </div>
     {/each}

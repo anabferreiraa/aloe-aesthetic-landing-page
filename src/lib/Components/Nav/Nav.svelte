@@ -4,10 +4,10 @@
 	import Brand from "../Branding/Brand.svelte";
 
 	let links = [
-		{ name: 'Produtos', href: '#produtos' },
 		{ name: 'Informações', href: '#sobre' },
-		{ name: 'Contato', href: '#contato' }
-
+    { name: 'Produtos', href: '#produtos' },
+    { name: 'Ofertas', href: '#ofertas' },
+		{ name: 'Kit', href: '#kit' }
 
 	];
 
@@ -19,7 +19,7 @@
 
 </script>
 
-<nav class="container backdrop-white relative flex justify-between gap-5 p-10">
+<nav class="container backdrop-white relative flex justify-between items-center gap-9 px-5 py-10  md:p-10">
   
   <div class="w-52 h-auto">
     <Brand class=" text-green-pea-900"/>
@@ -35,7 +35,7 @@
     </ul>
   </div>
 
-  <div class="flex justify-center lg:hidden">
+  <div class="flex justify-center mt-2 lg:hidden">
     <button onclick={toggleMenu}>
       <Menu class="h-auto w-8 text-green-pea-800" />
     </button>

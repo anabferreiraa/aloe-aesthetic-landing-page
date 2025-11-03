@@ -9,8 +9,9 @@
       title:"Saiba mais",
       href:"#produtos"
   }
+  const idSection = "header"
 </script>
-<header id="header" class="bg-[url(/image/header/background-mobile.webp)] lg:bg-[url(/image/header/background-header-desktop.webp)] bg-center bg-no-repeat bg-cover pt-3 h-[980px] md:h-[1050px] lg:h-[790px]">
+<header id={idSection} class="bg-[url(/image/header/background-mobile.webp)] lg:bg-[url(/image/header/background-header-desktop.webp)] bg-center bg-no-repeat bg-cover pt-3 h-[980px] md:h-[1050px] lg:h-[790px]">
 <Nav />
 <div class="container grid grid-cols-1 lg:grid-cols-2  mt-15 lg:mt-0 lg:items-center h-[85%]">
 <div class="flex flex-col gap-5 text-center lg:text-start text-green-pea-950">

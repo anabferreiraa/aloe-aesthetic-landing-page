@@ -2,11 +2,14 @@
 	import CaretCircleDown from '$lib/Components/Icons/CaretCircleDown.svelte';
 	import ShoppingCart from '$lib/Components/Icons/Shopping-cart.svelte';
 	import { writable } from 'svelte/store';
+
+	const idOffers = "ofertas"
+	const idKit = "kit"
 	const products = [
 		{
 			image: {
 				dir: '/image/offers/',
-				name: 'hidratante-offers',
+				name: 'body-cream-offers',
 				alt: ''
 			},
 			text: {
@@ -23,7 +26,7 @@
 		{
 			image: {
 				dir: '/image/offers/',
-				name: 'creme-facil-offers',
+				name: 'facial-cream-offers',
 				alt: ''
 			},
 			text: {
@@ -40,7 +43,7 @@
 		{
 			image: {
 				dir: '/image/offers/',
-				name: 'esfoliante-facial-offers',
+				name: 'facial-exfoliator-offers',
 				alt: ''
 			},
 			text: {
@@ -110,7 +113,7 @@
 	}
 </script>
 
-<section id="ofertas" class=" bg-green-pea-800">
+<section id={idOffers} class=" bg-green-pea-800">
 	<div
 		class="relative container flex flex-col items-center justify-center bg-[url(/image/offers/background-offers-mobile.webp)] bg-cover bg-center bg-no-repeat py-20 lg:bg-[url(/image/offers/background-offers-desktop.webp)]"
 	>
@@ -120,7 +123,7 @@
 					class="mt-20 flex flex-col justify-between overflow-clip rounded-t-2xl rounded-br-2xl bg-green-pea-900"
 				>
 					<div>
-						<img src="{image.dir + image.name}.webp" {alt} />
+						<img loading="lazy" src="{image.dir + image.name}.webp" {alt} />
 					</div>
 					<div class="space-y-6 p-5 text-green-pea-50">
 						<h4 class="text-2xl font-light">{text.title}</h4>
@@ -168,7 +171,7 @@
 				>
 					<h3 class="text-2xl text-green-pea-950">{$selectedContent.title}</h3>
 					<p class="text-green-pea-950/80">{$selectedContent.descriton}</p>
-					<img src={$selectedContent.img} alt="Winking Face" width="25" height="25" />
+					<img loading="lazy" src={$selectedContent.img} alt="Winking Face" width="25" height="25" />
 				</div>
 				<div class="flex justify-end border-t border-green-pea-900 p-6">
 					<button
@@ -181,17 +184,17 @@
 
 		<div class="mt-10 flex flex-col items-center justify-center gap-6 text-center">
 			<p class="text-2xl text-green-pea-50">Adquira o kit completo de Aloecram</p>
-			<button class=" cursor-pointer rounded-full bg-green-pea-50">
+			<button class="animate-bounce cursor-pointer rounded-full bg-green-pea-50">
 				<a href="#kit"><CaretCircleDown class="h-10 w-10 text-green-pea-800" /></a></button
 			>
 		</div>
 	</div>
 </section>
-<section id="kit" class=" bg-green-pea-900 py-20">
+	<section id={idKit} class=" bg-green-pea-900 py-20">
 	<div class="container">
 		<div class="grid grid-cols-1 gap-8 py-10 lg:grid-cols-2 xl:px-10">
 			<div class="flex items-end justify-end">
-				<img src="{completeKit.image.dir + completeKit.image.name}.webp" alt="" />
+				<img loading="lazy" src="{completeKit.image.dir + completeKit.image.name}.webp" alt="" />
 			</div>
 			<div class="flex flex-col justify-between gap-5 lg:px-8">
 				<h3 class="titleSection text-green-pea-50">

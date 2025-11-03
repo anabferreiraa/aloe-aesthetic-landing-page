@@ -24,6 +24,10 @@
 	--color-green-pea-800: #065f46;
 	--color-green-pea-900: #064e3a;
 	--color-green-pea-950: #022c20;
+
+	 --animate-spin-slow: spin 10s linear infinite;
+	  --animate-spin-smooth: spin 6s ease-in-out infinite;
+
 }
 @layer {
 	body {

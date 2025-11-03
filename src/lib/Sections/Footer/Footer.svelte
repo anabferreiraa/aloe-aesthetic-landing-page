@@ -1,8 +1,11 @@
 <script>
+	import CaretCircleDown from "$lib/Components/Icons/CaretCircleDown.svelte";
+	import GitHub from "$lib/Components/Icons/gitHub.svelte";
 	import Instagram from "$lib/Components/Icons/Instagram.svelte";
 	import Whatsapp from "$lib/Components/Icons/Whatsapp.svelte";
 	import { writable } from 'svelte/store';
-
+   
+	const idSection = "contato"
 	const footer = {
 		text: {
 			title: 'Informações da Empresa',
@@ -183,8 +186,13 @@
 
 </script>
 
-<footer id="contato" class="relative bg-green-pea-800">
+<footer id={idSection} class="relative bg-green-pea-800">
 	<div class=" container py-10">
+		<div class="my-5 flex justify-end">
+			<button class=" cursor-pointer rounded-full bg-green-pea-50">
+				<a href="#header"><CaretCircleDown class="h-10 w-10 rotate-180 text-green-pea-800" /></a></button
+			>
+		 </div>
 		<div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-8"> 
         <div class="flex flex-col gap-3">
 			<h4 class="text-xl text-green-pea-50">{footer.text.title}</h4>
@@ -219,7 +227,7 @@
 									<li>{@html desc}</li>
 								{/each}
 								{#if term.copywriter.img}
-                                    <img src={term.copywriter.img} alt="algo" width="45" height="45"/>
+                                    <img loading="lazy" src={term.copywriter.img} alt="algo" width="45" height="45"/>
                                 {/if}
 							</ul>
 						</div>
@@ -238,9 +246,10 @@
        <hr class="text-green-pea-50/70 mt-20" />
        <div class="grid grid-cols-1 lg:grid-cols-2 lg:justify-between gap-5 items-center mt-10">
           <img src="/logo/Logo.svg" alt="">
-          <div class="flex  gap-3 lg:justify-end  ">
+          <div class="flex gap-3 lg:justify-end  ">
             <a href="https://wa.me/559184959195" target="_blank"> <Whatsapp class="w-8 h-8 text-green-pea-50"/> </a>
-              <a href="https://www.instagram.com/ana_ferreirabeatriz"  target="_blank"> <Instagram class="w-8 h-8 text-green-pea-50"/> </a>
+            <a href="https://www.instagram.com/ana_ferreirabeatriz"  target="_blank"> <Instagram class="w-8 h-8 text-green-pea-50"/> </a>
+			<a href="https://github.com/anabferreiraa" target="_blank">  <GitHub class="w-8 h-8 text-green-pea-50"/> </a>
           </div>
        </div>
           

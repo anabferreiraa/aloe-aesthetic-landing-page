@@ -1,4 +1,5 @@
 <script>
+   const idSection = "sobre"
     let informative =  {
         title: "Aloe Vera",
         text: [
@@ -9,10 +10,10 @@
     }
 </script>
 
-<section id="sobre" class="py-20 bg-green-pea-900">
+<section id={idSection} class="py-20 bg-green-pea-900">
     <div class="container grid grid-cols-1 lg:grid-cols-2 p-6 gap-30 justify-center items-center">
       <div class="lg:h-[315px] rounded-3xl overflow-clip">
-        <img src="/image/informative/section-informative-creme-aloe-vera.webp" alt="">
+        <img loading="lazy" src="/image/informative/section-informative-creme-aloe-vera.webp" alt="">
       </div>
       <div class="flex flex-col gap-4 text-green-pea-50">
         <h2 class="titleSection">{informative.title}</h2>
