@@ -1,4 +1,5 @@
 <script>
+	import Faq from "$lib/Sections/Faq/Faq.svelte";
 	import Footer from "$lib/Sections/Footer/Footer.svelte";
 	import Header from "$lib/Sections/Header/Header.svelte";
 	import Informative from "$lib/Sections/Informative/Informative.svelte";
@@ -15,6 +16,7 @@
 <Informative/>
 <Offers/>
 <Reviews/>
+<Faq/>
 </main>
 
 <Footer/>
