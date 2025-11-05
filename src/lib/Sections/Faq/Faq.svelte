@@ -52,13 +52,13 @@
 </script>
 
 <section class="py-20 mb-10">
-	<div class="container gap-10 text-center">
+	<div class="container text-center">
         <div class="flex flex-col">
-			<div class="flex items-center gap-4">
-				<div class="h-4 w-4 bg-green-pea-950"></div>
+			<div class="flex items-center justify-center flex-col gap-4">
+				<div class="h-4 w-8 bg-green-pea-950"></div>
 				<h3 class="titleCard text-start">Sua pele merece clareza também</h3>
 			</div>
-			<div class="mt-9 grid grid-cols-1 gap-2 ">
+			<div class="mt-9 grid grid-cols-1 gap-3 ">
 				{#each faqs as { question, answer }}
 					<details
 						class="group cursor-pointer space-y-2 rounded-xl border border-solid border-green-600 p-4 text-left transition-all duration-500"
@@ -76,6 +76,7 @@
 				{/each}
 			</div>
 		</div>
+       
 	</div>
 </section>
 
