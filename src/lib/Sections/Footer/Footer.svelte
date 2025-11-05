@@ -1,6 +1,6 @@
 <script>
 	import CaretCircleDown from "$lib/Components/Icons/CaretCircleDown.svelte";
-	import GitHub from "$lib/Components/Icons/gitHub.svelte";
+	import GitHub from "$lib/Components/Icons/GitHub.svelte";
 	import Instagram from "$lib/Components/Icons/Instagram.svelte";
 	import Whatsapp from "$lib/Components/Icons/Whatsapp.svelte";
 	import { writable } from 'svelte/store';
