@@ -195,14 +195,14 @@
 		 </div>
 		<div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-8"> 
         <div class="flex flex-col gap-3">
-			<h4 class="text-xl text-green-pea-50">{footer.text.title}</h4>
+			<h4 class="text-green-pea-50">{footer.text.title}</h4>
 			<p class="text-green-pea-50/80 w-[280px]">{footer.text.descrition}</p>
 		</div>
 		
 			{#each footer.infor as { title, links}}
 				<ul class="flex  lg:justify-center">
 				<li class="grid grid-cols-1 gap-5 justify-items-start">
-					<h5 class="text-xl text-green-pea-50">{title}</h5>
+					<h5 class=" text-green-pea-50">{title}</h5>
 					{#each links as { title, href, id }}
 						<a onclick={(event) => {
 						event.preventDefault();
@@ -219,7 +219,7 @@
 				{#each termos as term}
 					{#if term.id === $selectedContent}
 						<div class="p-6 text-center text-green-pea-950">
-							<h2 class="text-2xl font-bold">{term.copywriter.title}</h2>
+							<h2 class="">{term.copywriter.title}</h2>
 						</div>
 						<div class="max-h-[450px] overflow-auto p-6 md:max-h-[500px]">
 							<ul class="space-y-4  text-green-pea-950/80">

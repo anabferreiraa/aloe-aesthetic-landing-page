@@ -1,5 +1,6 @@
 <script>
-	import Star from "$lib/Components/Icons/Star.svelte";
+	import HeadLine from "$lib/Components/HeadLine/HeadLine.svelte";
+import Star from "$lib/Components/Icons/Star.svelte";
 
    const reviews =  [
               {
@@ -24,10 +25,8 @@
 <section class="py-20">
 	<div class="container flex flex-col">
 		<div class="space-y-5 text-green-pea-950">
-            <div class="flex items-center gap-4">
-             <div class="w-4 h-4 bg-green-pea-950"></div> <h3 class="titleCard">Histórias de beleza e bem-estar</h3>
-            </div>
-			<p class="text-xl  opacity-80"> Cada produto, um novo ritual de cuidado. Veja o que nossas clientes estão sentindo. </p>
+			<HeadLine text="Histórias de beleza e bem-estar"/>
+			<p class="opacity-80"> Cada produto, um novo ritual de cuidado. Veja o que nossas clientes estão sentindo. </p>
 		</div>
 		<ul
 			class="mt-20 flex snap-x snap-mandatory gap-4 overflow-x-auto lg:container lg:grid lg:flex-none lg:snap-none lg:grid-cols-3 lg:gap-10 lg:overflow-hidden"
@@ -46,10 +45,10 @@
                             <Star class="w-5 h-5 text-amber-400 "/>
 						</div>
                         <div class="h-[2px] w-3 rounded-full bg-green-pea-50/40"></div>
-                         <h5 class="font-medium lg:text-lg  text-green-pea-50">{profilename}</h5>
+                         <h4 class=" text-green-pea-50">{profilename}</h4>
                         </div>
 						<div class="text-green-pea-50/80">
-							<p class=" lg:text-base">
+							<p class=" ">
 								" {review} "
 							</p>
 						</div>

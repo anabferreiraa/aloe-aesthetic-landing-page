@@ -126,8 +126,8 @@
 						<img loading="lazy" src="{image.dir + image.name}.webp" {alt} />
 					</div>
 					<div class="space-y-6 p-5 text-green-pea-50">
-						<h4 class="text-2xl font-light">{text.title}</h4>
-						<p class=" font-light">{text.descriton}</p>
+						<h3 class="font-light">{text.title}</h3>
+						<p class="font-light">{text.descriton}</p>
 					</div>
 					<div
 						class="flex flex-row justify-between bg-gradient-to-r from-green-pea-600 to-green-pea-700"
@@ -169,7 +169,7 @@
 					id="aviso"
 					class="flex flex-col items-center justify-between gap-4 bg-green-pea-50 p-8"
 				>
-					<h3 class="text-2xl text-green-pea-950">{$selectedContent.title}</h3>
+					<h3 class=" text-green-pea-950">{$selectedContent.title}</h3>
 					<p class="text-green-pea-950/80">{$selectedContent.descriton}</p>
 					<img loading="lazy" src={$selectedContent.img} alt="Winking Face" width="25" height="25" />
 				</div>
@@ -183,7 +183,7 @@
 		</dialog>
 
 		<div class="mt-10 flex flex-col items-center justify-center gap-6 text-center">
-			<p class="text-2xl text-green-pea-50">Adquira o kit completo de Aloecram</p>
+			<p class=" text-green-pea-50">Adquira o kit completo de Aloecram</p>
 			<button class="animate-bounce cursor-pointer rounded-full bg-green-pea-50">
 				<a href="#kit"><CaretCircleDown class="h-10 w-10 text-green-pea-800" /></a></button
 			>
@@ -197,10 +197,10 @@
 				<img loading="lazy" src="{completeKit.image.dir + completeKit.image.name}.webp" alt="" />
 			</div>
 			<div class="flex flex-col justify-between gap-5 lg:px-8">
-				<h3 class="titleSection text-green-pea-50">
+				<h3 class=" text-green-pea-50">
 					{completeKit.text.title}
 				</h3>
-				<p class="text-2xl font-light text-green-pea-50/80">{completeKit.text.descriton}</p>
+				<p class=" text-green-pea-50/80">{completeKit.text.descriton}</p>
 				<span class="flex flex-col gap-3 text-xl font-light text-green-pea-50/70">
 					De {completeKit.price.real_value.toLocaleString('pt-BR', {
 						style: 'currency',

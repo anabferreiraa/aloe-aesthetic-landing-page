@@ -7,12 +7,18 @@
 @import '@fontsource/roboto/500.css';
 
 @theme {
+	/* Fontes */
+	--font-display: 'Noto Serif KR Variable', serif;
+	--font-body: 'Roboto', sans-serif;
+
+	/* Pontos de quebra */
 	--breakpoint-sm: 40rem;
 	--breakpoint-md: 48rem;
 	--breakpoint-lg: 64rem;
 	--breakpoint-xl: 80rem;
 	--breakpoint-2xl: initial;
 
+	/* Cores */
 	--color-green-pea-50: #ecfdf8;
 	--color-green-pea-100: #d1faee;
 	--color-green-pea-200: #a7f3de;
@@ -25,19 +31,37 @@
 	--color-green-pea-900: #064e3a;
 	--color-green-pea-950: #022c20;
 
-	 --animate-spin-slow: spin 10s linear infinite;
-	  --animate-spin-smooth: spin 6s ease-in-out infinite;
-
+	/* animação */
+	--animate-spin-slow: spin 10s linear infinite;
 }
-@layer {
+@layer base {
+	html,
 	body {
-  font-family: 'Roboto', sans-serif;
-} 
- h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Serif KR Variable', serif;
-  }
-	html {
+		font-family: var(--font-body);
 		scroll-behavior: smooth;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: var(--font-display);
+	}
+	h1 {
+		@apply text-4xl md:text-5xl;
+		@apply font-bold;
+	}
+	h2 {
+		@apply text-2xl md:text-3xl;
+		
+	}
+	h3 {
+		@apply text-xl;
+		@apply font-bold;
+	}
+	p {
+		@apply text-base;
+		@apply leading-relaxed;
+		@apply opacity-80;
 	}
 }
 
@@ -60,30 +84,12 @@
 		padding-inline: 0;
 	}
 }
-@utility titleSection {
-	font-size: 1.875rem;
-	font-weight: 700;
-	@variant lg {
-		font-size: 2.25rem;
-	}
-}
 
-@utility titleCard {
-	font-size: 1.5rem;
-	@variant lg {
-		font-size: 1.875rem;
-	}
-}
-
-@utility card {
-	border-radius: var(--radius-3xl);
-}
-
-.backdrop-white{
-    @apply bg-white/30 backdrop-blur-xl; 
+.backdrop-white {
+	@apply bg-white/30 backdrop-blur-xl;
 	@apply rounded-xl border border-white/30;
 }
-.backdrop{
-    @apply bg-black/10 backdrop-blur-md; 
+.backdrop {
+	@apply bg-black/10 backdrop-blur-md;
 	@apply rounded-xl border border-white/30;
 }

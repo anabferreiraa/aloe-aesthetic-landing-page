@@ -16,9 +16,9 @@
         <img loading="lazy" src="/image/informative/section-informative-creme-aloe-vera.webp" alt="">
       </div>
       <div class="flex flex-col gap-4 text-green-pea-50">
-        <h2 class="titleSection">{informative.title}</h2>
+        <h2 class="">{informative.title}</h2>
         {#each informative.text as text }
-          <p class="text-2xl">{text}</p>
+          <p class="">{text}</p>
         {/each}
         
       </div>
