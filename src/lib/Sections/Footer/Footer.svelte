@@ -1,5 +1,6 @@
 <script>
 	import CaretCircleDown from "$lib/Components/Icons/CaretCircleDown.svelte";
+	import GitHub from "$lib/Components/Icons/GitHub.svelte";
 	import Instagram from "$lib/Components/Icons/Instagram.svelte";
 	import Whatsapp from "$lib/Components/Icons/Whatsapp.svelte";
 	import { writable } from 'svelte/store';
@@ -248,6 +249,7 @@
           <div class="flex gap-3 lg:justify-end  ">
             <a href="https://wa.me/559184959195" target="_blank"> <Whatsapp class="w-8 h-8 text-green-pea-50"/> </a>
             <a href="https://www.instagram.com/ana_ferreirabeatriz"  target="_blank"> <Instagram class="w-8 h-8 text-green-pea-50"/> </a>
+			<a href="https://github.com/anabferreiraa" target="_blank"> <GitHub class="w-8 h-8 text-green-pea-50"/> </a>
 			
           </div>
        </div>
