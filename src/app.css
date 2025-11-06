@@ -32,7 +32,7 @@
 	--color-green-pea-950: #022c20;
 
 	/* animação */
-	--animate-spin-slow: spin 10s linear infinite;
+	--animate-spin-slow: spin 20s linear infinite;
 }
 @layer base {
 	html,
@@ -92,4 +92,8 @@
 .backdrop {
 	@apply bg-black/10 backdrop-blur-md;
 	@apply rounded-xl border border-white/30;
+}
+
+.border-personalized {
+	@apply rounded-xl;
 }

@@ -19,7 +19,7 @@
 
 <div class="relative container">
 	<nav
-		class="backdrop-white container flex items-center justify-between gap-9 px-5 py-5 lg:py-10"
+		class="backdrop-white container flex items-center justify-between gap-9 px-5 py-5 lg:px-10 lg:py-10"
 	>
 		<div class="h-auto w-52">
 			<Brand class="w-42 text-green-pea-900" />

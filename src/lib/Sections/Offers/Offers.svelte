@@ -120,7 +120,7 @@
 		<div class="grid grid-cols-1 gap-8 py-10 lg:grid-cols-3 xl:px-10">
 			{#each products as { image, descriton, text, dir, alt, title, price, real_value, number_installment, installment_value }}
 				<div
-					class="mt-20 flex flex-col justify-between overflow-clip rounded-t-2xl rounded-br-2xl bg-green-pea-900"
+					class="mt-20 flex flex-col justify-between overflow-clip rounded-t-xl rounded-br-xl bg-green-pea-900"
 				>
 					<div>
 						<img loading="lazy" src="{image.dir + image.name}.webp" {alt} />
@@ -134,7 +134,7 @@
 					>
 						<div class="flex flex-col gap-2 p-5 text-green-pea-50">
 							<span class="lg:text-lg">
-								De até {price.number_installment + 'X'} de {price.installment_value.toLocaleString(
+								De até {price.number_installment + 'x'} de {price.installment_value.toLocaleString(
 									'pt-BR',
 									{
 										style: 'currency',
@@ -197,9 +197,9 @@
 				<img loading="lazy" src="{completeKit.image.dir + completeKit.image.name}.webp" alt="" />
 			</div>
 			<div class="flex flex-col justify-between gap-5 lg:px-8">
-				<h3 class=" text-green-pea-50">
+				<h2 class=" text-green-pea-50">
 					{completeKit.text.title}
-				</h3>
+				</h2>
 				<p class=" text-green-pea-50/80">{completeKit.text.descriton}</p>
 				<span class="flex flex-col gap-3 text-xl font-light text-green-pea-50/70">
 					De {completeKit.price.real_value.toLocaleString('pt-BR', {
@@ -212,7 +212,7 @@
 							currency: 'BRL'
 						})}
 					</p>
-					ou {completeKit.price.number_installment + 'X'} de {completeKit.price.installment_value.toLocaleString(
+					ou {completeKit.price.number_installment + 'x'} de {completeKit.price.installment_value.toLocaleString(
 						'pt-BR',
 						{
 							style: 'currency',
@@ -223,7 +223,7 @@
 				<a
 					href="#aviso"
 					onclick={openDialog}
-					class="cursor-pointer bg-green-pea-400 p-6 text-center text-2xl font-medium text-green-pea-950 hover:bg-green-pea-300"
+					class="border-personalized cursor-pointer bg-green-pea-400 p-6 text-center text-2xl font-medium text-green-pea-950 hover:bg-green-pea-300"
 					>Comprar kit Completo</a
 				>
 			</div>

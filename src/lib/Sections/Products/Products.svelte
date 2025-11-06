@@ -63,7 +63,7 @@
         
         <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {#each products as {image, title, description, specification}}
-            <div class="grid grid-cols-1 justify-between border-1 border-green-pea-800 gap-4 rounded-xl overflow-clip">
+            <div class="border-personalized grid grid-cols-1 justify-between border-1 border-green-pea-800 gap-4 overflow-clip">
                 <div>
                  <img src= "/image/products/{image.name}.webp" alt={image.alt}>
                 </div>

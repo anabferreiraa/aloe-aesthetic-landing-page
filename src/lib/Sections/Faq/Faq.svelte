@@ -56,22 +56,23 @@
         <div class="flex flex-col">
 			<div class="flex items-center justify-center flex-col gap-4">
 				<div class="h-4 w-8 bg-green-pea-950"></div>
-				<h3 class="text-start">Sua pele merece clareza também</h3>
+				<h2 class="text-start">Sua pele merece clareza também</h2>
 			</div>
 			<div class="mt-9 grid grid-cols-1 gap-3 ">
 				{#each faqs as { question, answer }}
 					<details
-						class="group cursor-pointer space-y-2 rounded-xl border border-solid border-green-600 p-4 text-left transition-all duration-500"
+						class="group cursor-pointer  rounded-xl px-6 py-4 border border-solid border-green-900/75  text-left transition-all duration-500"
 					>
-						<summary class="flex justify-between text-xl items-start md:text-lg ">
-							<h3 class=" text-green-pea-950">{question}</h3>
+						<summary class="flex justify-between items-start ">
+							<h4 class="text-green-pea-950">{question}</h4>
 							<div><CaretDown class="h-auto w-8 text-green-pea-950 group-open:rotate-180" /></div>
 						</summary>
 						{#each answer.list as itens}
-							<p class="space-y-5 mt-5 text-green-pea-950/75">
+						   <p class="space-y-5 mt-5 text-green-pea-950/75">
 								{@html itens}
 							</p>
 						{/each}
+						
 					</details>
 				{/each}
 			</div>
