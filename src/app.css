@@ -33,6 +33,7 @@
 
 	/* animação */
 	--animate-spin-slow: spin 20s linear infinite;
+	--animate-gradient: gradient 6s linear infinite;
 }
 @layer base {
 	html,
@@ -52,7 +53,6 @@
 	}
 	h2 {
 		@apply text-2xl md:text-3xl;
-		
 	}
 	h3 {
 		@apply text-xl;
@@ -96,4 +96,13 @@
 
 .border-personalized {
 	@apply rounded-xl;
+}
+@keyframes gradient {
+	0%,
+	100% {
+		border-color: #ecfdf8;
+	}
+	50% {
+		border-color: #064e3a;
+	}
 }

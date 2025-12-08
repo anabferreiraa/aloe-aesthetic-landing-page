@@ -23,8 +23,8 @@
 			<h2>{text.subTitle}</h2>
 			<h1 >{text.title}</h1>
 			<p>{text.descrition}</p>
-			<div class="flex justify-center lg:justify-start">
-					<a class="bg-green-pea-600 px-6 py-4 text-xl text-green-pea-50 border-personalized hover:bg-green-pea-400" href={cta.href}> {cta.title}</a>
+			<div class="flex justify-center lg:justify-start inset-0 ">
+					<a class=" bg-green-pea-600 border-2 animate-gradient px-6 py-4 text-xl text-green-pea-50 border-personalized hover:bg-green-pea-500" href={cta.href}> {cta.title}</a>
 			</div>
 		</div>
 	</div>
