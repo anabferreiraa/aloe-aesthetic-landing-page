@@ -152,7 +152,7 @@
 						<a
 							href="#aviso"
 							onclick={openDialog}
-							class="flex cursor-pointer items-center justify-center bg-green-pea-400 p-8"
+							class="flex cursor-pointer items-center justify-center bg-green-pea-400 hover:bg-green-pea-300 to-green-pea-600/50 p-8"
 							><ShoppingCart class="h-8 w-8 text-green-pea-950" />
 						</a>
 					</div>

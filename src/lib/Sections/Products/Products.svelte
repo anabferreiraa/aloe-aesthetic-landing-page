@@ -61,11 +61,11 @@
         
              <HeadLine text="Tudo pensado para o seu bem-estar!"/>
         
-        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {#each products as {image, title, description, specification}}
             <div class="border-personalized grid grid-cols-1 justify-between border-1 border-green-pea-800 gap-4 overflow-clip">
-                <div>
-                 <img src= "/image/products/{image.name}.webp" alt={image.alt}>
+                <div >
+                 <img  src= "/image/products/{image.name}.webp" alt={image.alt}>
                 </div>
                  <div class="p-5 space-y-4 text-green-pea-950">
                    <h3>{title}</h3>

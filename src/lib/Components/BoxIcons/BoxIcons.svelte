@@ -44,7 +44,7 @@
 	<!-- Coluna esquerda -->
 	<div class="flex flex-col items-center justify-center gap-20">
 			<div class="flex flex-col items-center gap-2 text-center">
-				<div class="relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
+				<div class="hover:scale-125 relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
 					<!-- Borda girando -->
 					<div
 						class="absolute inset-0 animate-spin-slow rounded-full border-1 border-dashed border-green-900/50"
@@ -55,7 +55,7 @@
 				<p class="text-green-pea-800">Produto 98% natural</p>
 			</div>
       <div class="flex flex-col items-center gap-2 text-center">
-				<div class="relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
+				<div class="hover:scale-125  relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
 					<!-- Borda girando -->
 					<div
 						class="absolute inset-0 animate-spin-slow rounded-full border-1 border-dashed border-green-900/50"
@@ -80,7 +80,7 @@
 	<div class="flex flex-col items-center justify-center gap-20">
 		
 			<div class="flex flex-col items-center gap-2 text-center">
-				<div class="relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
+				<div class="hover:scale-125 relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
 					<!-- Borda girando -->
 					<div
 						class="absolute inset-0 animate-spin-slow rounded-full border-1 border-dashed border-green-900/50"
@@ -92,7 +92,7 @@
 			</div>
 
       <div class="flex flex-col items-center gap-2 text-center">
-				<div class="relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
+				<div class="hover:scale-125 relative h-20 w-20 rounded-full bg-green-50 flex justify-center items-center">
 					<!-- Borda girando -->
 					<div
 						class="absolute inset-0 animate-spin-slow rounded-full border-1 border-dashed border-green-900/50"
